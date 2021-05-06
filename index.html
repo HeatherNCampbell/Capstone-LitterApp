@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LitterApp</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=" style.css">
+</head>
+
+<!-- BODY -->
+<body>
+    <div id="gradient"></div>
+    <div class="litapp">
+        <img src="Images/kentuckyImage.jpg" class="responsive" alt="Map of Kentucky">    
+    </div>
+    <div class="banner">LitterApp</div>
+    <div class="textcont">
+        <div class="divtext">
+            <p>Thank you for wanting to help make Kentucky a litter-free state. LitterApp will allow you to easily
+                report litter:
+            <ul>
+                <li>Choose the date</li>
+                <li>Enter your contact information</li>
+                <li>Select the Complaint</li>
+                <li>Upload an image</li>
+                <li>Click the map locator</li>
+                <li>Click the 'Submit' button</li>
+            </ul>
+            </p>
+        </div>
+    </div>
+
+    <!-- CONTAINER-->
+    <div class="container">
+        <div class="contact">
+            <h3>Contact Information</h3>
+            <div id="currentDate">
+                <label for="date">Date: </label>
+                <input type="date" name="bday" id="start_date" />
+            </div>
+            <br>
+            <div id="firstName">
+                <label for="firstName">First Name: </label>
+                <br>
+                <input type="text" name="fNText" style="width: 100%" required>
+            </div>
+            <div id="lastName">
+                <label for="lastName">Last Name: </label>
+                <br>
+                <input type="text" name="lNText" style="width: 100%" ;>
+            </div>
+            <div id="email">
+                <label for="email">Email: </label>
+                <br>
+                <input type="text" name="eMText" style="width: 100%" ;>
+            </div>
+            <div id="phone">
+                <label for="phone">Phone: </label>
+                <br>
+                <input type="text" name="ph" style="width: 100%" ;>
+            </div>
+            <div>
+                <br>
+                </div>
+        </div>
+
+        <!-- RADIO BUTTONS -->
+        <div class="radioBtns">
+            <h3>Select Complaint</h3>
+            <div class="radio">
+                <input type="radio" id="dumpster" name="drone" value="dumpster">
+                <label for="dumpster">Dumpster</label>
+            </div>
+            <br>
+            <div>
+                <input type="radio" id="illegalDumping" name="drone" value="illegalDumping">
+                <label for="illegalDumping">Illegal Dumping</label>
+            </div>
+            <br>
+            <div>
+                <input type="radio" id="litterComplaint" name="drone" value="litterComplaint">
+                <label for="litterComplaint">Litter Complaint</label>
+            </div>
+            <br>
+            <div>
+                <input type="radio" id="wasteViolation" name="drone" value="wasteViolation">
+                <label for="wasteViolation">Waste Violation</label>
+            </div>
+            <br>
+            <div>
+                <input type="radio" id="trashPublicProperty" name="drone" value="trashPublicProperty">
+                <label for="trashPublicProperty">Trash on Public Property</label>
+            </div>
+            <br>
+            <div>
+                <input type="radio" id="trashPrivateProperty" name="drone" value="trashPrivateProperty">
+                <label for="trashPrivateProperty">Trash on Private Property</label>
+            </div>
+            <br>
+            <div>
+                
+            </div>
+        </div>
+        <div class="link">
+            <div>
+                <label>Choose Image File</label>
+                <br>
+                <input type="file" accept="image/*" capture>
+            </div>
+            <br>
+
+            <!-- Handling a FileList object -->
+            <img id="output">
+             <div>
+                <div>Click anywhere on the map:</div>
+                <br>
+                <div id="mapImage"><img src="Images/mapImage.png" class="responsive" alt="BC Skills Map"></div>
+                <div id="address"></div>    
+            </div>
+        </div>
+        <button id="submit">SUBMIT</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
