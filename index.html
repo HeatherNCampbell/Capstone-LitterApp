@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +11,22 @@
 </head>
 
 <!-- BODY -->
+
 <body>
-    <div id="gradient"></div>
-    <div class="litapp">
-        <img src="Images/kentuckyImage.jpg" class="responsive" alt="Map of Kentucky">    
+    <div>
+        <div class="container">
+            <img src="Images/kentuckyBlue.png" class="responsive" alt="Map of Kentucky">
+        <div class="centered">LitterApp</div>
+        <br>
+        </div>
     </div>
-    <div class="banner">LitterApp</div>
+
     <div class="textcont">
         <div class="divtext">
-            <p>Thank you for wanting to help make Kentucky a litter-free state. LitterApp will allow you to easily
-                report litter:
+            <fieldset>
+                <p>Thank you for wanting to help make Kentucky a litter-free state. LitterApp will allow you to easily
+                    report litter.
+            </fieldset>
             <ul>
                 <li>Choose the date</li>
                 <li>Enter your contact information</li>
@@ -29,13 +36,16 @@
                 <li>Click the 'Submit' button</li>
             </ul>
             </p>
+
         </div>
     </div>
 
     <!-- CONTAINER-->
-    <div class="container">
+    <div id="container">
         <div class="contact">
-            <h3>Contact Information</h3>
+            <fieldset>Contact Information
+            </fieldset>
+            <br>
             <div id="currentDate">
                 <label for="date">Date: </label>
                 <input type="date" name="bday" id="start_date" />
@@ -63,12 +73,13 @@
             </div>
             <div>
                 <br>
-                </div>
+            </div>
         </div>
 
         <!-- RADIO BUTTONS -->
         <div class="radioBtns">
-            <h3>Select Complaint</h3>
+            <fieldset>Select Complaint</fieldset>
+            <br>
             <div class="radio">
                 <input type="radio" id="dumpster" name="drone" value="dumpster">
                 <label for="dumpster">Dumpster</label>
@@ -100,10 +111,14 @@
             </div>
             <br>
             <div>
-                
+
             </div>
         </div>
         <div class="link">
+            <div>
+                <fieldset>Location</fieldset>
+            </div>
+            <br>
             <div>
                 <label>Choose Image File</label>
                 <br>
@@ -113,15 +128,19 @@
 
             <!-- Handling a FileList object -->
             <img id="output">
-             <div>
+            <div>
                 <div>Click anywhere on the map:</div>
                 <br>
-                <div id="mapImage"><img src="Images/mapImage.png" class="responsive" alt="BC Skills Map"></div>
-                <div id="address"></div>    
+                <div id="mapImage"><img src="Images/mapImage.jpg" class="responsive" alt="BC Skills"></div>
+                <div id="address"></div>
             </div>
         </div>
-        <button id="submit">SUBMIT</button>
+        <!-- <div class="btn">
+            <button id="submit">SUBMIT</button>
+        </div> -->
+
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
